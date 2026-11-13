@@ -1,0 +1,10 @@
+position,column_name,source_header,hive_type,role,units,definition
+1,cement_kg_m3,Cement,DOUBLE,predictor,kg/m^3,Quantity of cement per cubic metre of mixture.
+2,slag_kg_m3,Blast Furnace Slag,DOUBLE,predictor,kg/m^3,Quantity of blast furnace slag per cubic metre of mixture.
+3,fly_ash_kg_m3,Fly Ash,DOUBLE,predictor,kg/m^3,Quantity of fly ash per cubic metre of mixture.
+4,water_kg_m3,Water,DOUBLE,predictor,kg/m^3,Quantity of water per cubic metre of mixture.
+5,superplasticizer_kg_m3,Superplasticizer,DOUBLE,predictor,kg/m^3,Quantity of superplasticizer per cubic metre of mixture.
+6,coarse_aggregate_kg_m3,Coarse Aggregate,DOUBLE,predictor,kg/m^3,Quantity of coarse aggregate per cubic metre of mixture.
+7,fine_aggregate_kg_m3,Fine Aggregate,DOUBLE,predictor,kg/m^3,Quantity of fine aggregate per cubic metre of mixture.
+8,age_days,Age,INT,predictor,days,Curing age when compressive strength was measured.
+9,strength_mpa,Concrete compressive strength,DOUBLE,target,MPa,Observed laboratory concrete compressive strength; regression target.

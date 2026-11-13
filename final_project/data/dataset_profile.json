@@ -1,0 +1,391 @@
+{
+  "dataset": "UCI Concrete Compressive Strength",
+  "source_sha256": "8d4b15b6fc68cd932d745cbd663d5ceae66dd54422e99c1e4865f2936ab7e2af",
+  "row_count": 1030,
+  "column_count": 9,
+  "source_cell_count": 9270,
+  "canonical_cell_identity_verified": true,
+  "missing_cell_count": 0,
+  "nonfinite_cell_count": 0,
+  "exact_duplicate_extra_rows": 25,
+  "exact_duplicate_extra_rows_preserved": true,
+  "distinct_full_numeric_rows": 1005,
+  "distinct_predictor_vectors": 992,
+  "predictor_vectors_with_different_targets": 9,
+  "distinct_ingredient_recipes": 427,
+  "ingredient_recipes_with_multiple_rows": 181,
+  "column_profile": [
+    {
+      "position_1_based": 1,
+      "column_name": "cement_kg_m3",
+      "source_header": "Cement",
+      "count": 1030,
+      "min": "102",
+      "max": "540",
+      "sum": "289602.9",
+      "mean_6dp": "281.167864",
+      "zero_count": 0,
+      "noninteger_count": 461
+    },
+    {
+      "position_1_based": 2,
+      "column_name": "slag_kg_m3",
+      "source_header": "Blast Furnace Slag",
+      "count": 1030,
+      "min": "0",
+      "max": "359.4",
+      "sum": "76112.7",
+      "mean_6dp": "73.895825",
+      "zero_count": 471,
+      "noninteger_count": 298
+    },
+    {
+      "position_1_based": 3,
+      "column_name": "fly_ash_kg_m3",
+      "source_header": "Fly Ash",
+      "count": 1030,
+      "min": "0",
+      "max": "200.1",
+      "sum": "55814.0",
+      "mean_6dp": "54.188350",
+      "zero_count": 566,
+      "noninteger_count": 295
+    },
+    {
+      "position_1_based": 4,
+      "column_name": "water_kg_m3",
+      "source_header": "Water",
+      "count": 1030,
+      "min": "121.8",
+      "max": "247",
+      "sum": "187014.3",
+      "mean_6dp": "181.567282",
+      "zero_count": 0,
+      "noninteger_count": 525
+    },
+    {
+      "position_1_based": 5,
+      "column_name": "superplasticizer_kg_m3",
+      "source_header": "Superplasticizer",
+      "count": 1030,
+      "min": "0",
+      "max": "32.2",
+      "sum": "6390.8",
+      "mean_6dp": "6.204660",
+      "zero_count": 379,
+      "noninteger_count": 502
+    },
+    {
+      "position_1_based": 6,
+      "column_name": "coarse_aggregate_kg_m3",
+      "source_header": "Coarse Aggregate",
+      "count": 1030,
+      "min": "801",
+      "max": "1145",
+      "sum": "1002106.5",
+      "mean_6dp": "972.918932",
+      "zero_count": 0,
+      "noninteger_count": 551
+    },
+    {
+      "position_1_based": 7,
+      "column_name": "fine_aggregate_kg_m3",
+      "source_header": "Fine Aggregate",
+      "count": 1030,
+      "min": "594",
+      "max": "992.6",
+      "sum": "796787.9",
+      "mean_6dp": "773.580485",
+      "zero_count": 0,
+      "noninteger_count": 560
+    },
+    {
+      "position_1_based": 8,
+      "column_name": "age_days",
+      "source_header": "Age",
+      "count": 1030,
+      "min": "1",
+      "max": "365",
+      "sum": "47032",
+      "mean_6dp": "45.662136",
+      "zero_count": 0,
+      "noninteger_count": 0
+    },
+    {
+      "position_1_based": 9,
+      "column_name": "strength_mpa",
+      "source_header": "Concrete compressive strength",
+      "count": 1030,
+      "min": "2.33",
+      "max": "82.6",
+      "sum": "36892.50",
+      "mean_6dp": "35.817961",
+      "zero_count": 0,
+      "noninteger_count": 1018
+    }
+  ],
+  "overall_reconciliation": {
+    "row_count": 1030,
+    "age_min_days": 1,
+    "age_max_days": 365,
+    "strength_sum_mpa": "36892.50",
+    "strength_mean_mpa_6dp": "35.817961",
+    "strength_min_mpa": "2.33",
+    "strength_max_mpa": "82.6",
+    "cement_mean_kg_m3_6dp": "281.167864",
+    "water_mean_kg_m3_6dp": "181.567282"
+  },
+  "age_band_definitions": {
+    "01_age_le_7": "age_days <= 7",
+    "02_age_8_to_28": "7 < age_days <= 28",
+    "03_age_29_to_90": "28 < age_days <= 90",
+    "04_age_gt_90": "age_days > 90"
+  },
+  "age_band_reconciliation": {
+    "01_age_le_7": {
+      "row_count": 262,
+      "age_min_days": 1,
+      "age_max_days": 7,
+      "strength_sum_mpa": "5844.80",
+      "strength_mean_mpa_6dp": "22.308397",
+      "strength_min_mpa": "2.33",
+      "strength_max_mpa": "59.09",
+      "cement_mean_kg_m3_6dp": "300.440076",
+      "water_mean_kg_m3_6dp": "179.730916"
+    },
+    "02_age_8_to_28": {
+      "row_count": 487,
+      "age_min_days": 14,
+      "age_max_days": 28,
+      "strength_sum_mpa": "17400.72",
+      "strength_mean_mpa_6dp": "35.730431",
+      "strength_min_mpa": "8.54",
+      "strength_max_mpa": "81.75",
+      "cement_mean_kg_m3_6dp": "262.992197",
+      "water_mean_kg_m3_6dp": "181.828542"
+    },
+    "03_age_29_to_90": {
+      "row_count": 145,
+      "age_min_days": 56,
+      "age_max_days": 90,
+      "strength_sum_mpa": "6907.95",
+      "strength_mean_mpa_6dp": "47.641034",
+      "strength_min_mpa": "21.86",
+      "strength_max_mpa": "80.2",
+      "cement_mean_kg_m3_6dp": "290.437241",
+      "water_mean_kg_m3_6dp": "179.857241"
+    },
+    "04_age_gt_90": {
+      "row_count": 136,
+      "age_min_days": 91,
+      "age_max_days": 365,
+      "strength_sum_mpa": "6739.03",
+      "strength_mean_mpa_6dp": "49.551691",
+      "strength_min_mpa": "24.1",
+      "strength_max_mpa": "82.6",
+      "cement_mean_kg_m3_6dp": "299.242647",
+      "water_mean_kg_m3_6dp": "185.992647"
+    }
+  },
+  "split_contract": {
+    "ingredient_columns": [
+      "cement_kg_m3",
+      "slag_kg_m3",
+      "fly_ash_kg_m3",
+      "water_kg_m3",
+      "superplasticizer_kg_m3",
+      "coarse_aggregate_kg_m3",
+      "fine_aggregate_kg_m3"
+    ],
+    "recipe_text": "{cement_kg_m3:.3f}|{slag_kg_m3:.3f}|{fly_ash_kg_m3:.3f}|{water_kg_m3:.3f}|{superplasticizer_kg_m3:.3f}|{coarse_aggregate_kg_m3:.3f}|{fine_aggregate_kg_m3:.3f}",
+    "hash": "SHA-256 of UTF-8 recipe_text, lowercase hexadecimal",
+    "bucket": "int(recipe_sha256[:8], 16) % 100",
+    "partitions": {
+      "train": "0..69",
+      "validation": "70..84",
+      "test": "85..99"
+    },
+    "expected_allocation": "70/15/15 by hash bucket; realized row proportions may differ",
+    "overlapping_recipe_counts": {
+      "train_validation": 0,
+      "train_test": 0,
+      "validation_test": 0
+    },
+    "partitions_profile": {
+      "train": {
+        "row_count": 754,
+        "age_min_days": 1,
+        "age_max_days": 365,
+        "strength_sum_mpa": "26443.36",
+        "strength_mean_mpa_6dp": "35.070769",
+        "strength_min_mpa": "2.33",
+        "strength_max_mpa": "82.6",
+        "cement_mean_kg_m3_6dp": "279.974138",
+        "water_mean_kg_m3_6dp": "182.194960",
+        "recipe_count": 317,
+        "age_bands": {
+          "01_age_le_7": {
+            "row_count": 191,
+            "age_min_days": 1,
+            "age_max_days": 7,
+            "strength_sum_mpa": "4165.98",
+            "strength_mean_mpa_6dp": "21.811414",
+            "strength_min_mpa": "2.33",
+            "strength_max_mpa": "59.09",
+            "cement_mean_kg_m3_6dp": "299.547644",
+            "water_mean_kg_m3_6dp": "179.969634"
+          },
+          "02_age_8_to_28": {
+            "row_count": 364,
+            "age_min_days": 14,
+            "age_max_days": 28,
+            "strength_sum_mpa": "12713.35",
+            "strength_mean_mpa_6dp": "34.926786",
+            "strength_min_mpa": "8.54",
+            "strength_max_mpa": "78.8",
+            "cement_mean_kg_m3_6dp": "261.590110",
+            "water_mean_kg_m3_6dp": "182.948352"
+          },
+          "03_age_29_to_90": {
+            "row_count": 105,
+            "age_min_days": 56,
+            "age_max_days": 90,
+            "strength_sum_mpa": "4942.20",
+            "strength_mean_mpa_6dp": "47.068571",
+            "strength_min_mpa": "21.86",
+            "strength_max_mpa": "79.4",
+            "cement_mean_kg_m3_6dp": "291.121905",
+            "water_mean_kg_m3_6dp": "180.388571"
+          },
+          "04_age_gt_90": {
+            "row_count": 94,
+            "age_min_days": 91,
+            "age_max_days": 365,
+            "strength_sum_mpa": "4621.83",
+            "strength_mean_mpa_6dp": "49.168404",
+            "strength_min_mpa": "24.1",
+            "strength_max_mpa": "82.6",
+            "cement_mean_kg_m3_6dp": "298.939362",
+            "water_mean_kg_m3_6dp": "185.817021"
+          }
+        }
+      },
+      "validation": {
+        "row_count": 151,
+        "age_min_days": 3,
+        "age_max_days": 365,
+        "strength_sum_mpa": "5888.33",
+        "strength_mean_mpa_6dp": "38.995563",
+        "strength_min_mpa": "6.28",
+        "strength_max_mpa": "80.2",
+        "cement_mean_kg_m3_6dp": "309.126490",
+        "water_mean_kg_m3_6dp": "179.996026",
+        "recipe_count": 58,
+        "age_bands": {
+          "01_age_le_7": {
+            "row_count": 44,
+            "age_min_days": 3,
+            "age_max_days": 7,
+            "strength_sum_mpa": "1122.21",
+            "strength_mean_mpa_6dp": "25.504773",
+            "strength_min_mpa": "6.28",
+            "strength_max_mpa": "55.6",
+            "cement_mean_kg_m3_6dp": "320.281818",
+            "water_mean_kg_m3_6dp": "180.593182"
+          },
+          "02_age_8_to_28": {
+            "row_count": 63,
+            "age_min_days": 14,
+            "age_max_days": 28,
+            "strength_sum_mpa": "2474.89",
+            "strength_mean_mpa_6dp": "39.283968",
+            "strength_min_mpa": "8.54",
+            "strength_max_mpa": "79.99",
+            "cement_mean_kg_m3_6dp": "280.685714",
+            "water_mean_kg_m3_6dp": "178.261905"
+          },
+          "03_age_29_to_90": {
+            "row_count": 22,
+            "age_min_days": 56,
+            "age_max_days": 90,
+            "strength_sum_mpa": "1140.64",
+            "strength_mean_mpa_6dp": "51.847273",
+            "strength_min_mpa": "31.02",
+            "strength_max_mpa": "80.2",
+            "cement_mean_kg_m3_6dp": "322.322727",
+            "water_mean_kg_m3_6dp": "178.081818"
+          },
+          "04_age_gt_90": {
+            "row_count": 22,
+            "age_min_days": 91,
+            "age_max_days": 365,
+            "strength_sum_mpa": "1150.59",
+            "strength_mean_mpa_6dp": "52.299545",
+            "strength_min_mpa": "34.49",
+            "strength_max_mpa": "75.5",
+            "cement_mean_kg_m3_6dp": "355.063636",
+            "water_mean_kg_m3_6dp": "185.681818"
+          }
+        }
+      },
+      "test": {
+        "row_count": 125,
+        "age_min_days": 3,
+        "age_max_days": 365,
+        "strength_sum_mpa": "4560.81",
+        "strength_mean_mpa_6dp": "36.486480",
+        "strength_min_mpa": "7.84",
+        "strength_max_mpa": "81.75",
+        "cement_mean_kg_m3_6dp": "254.594400",
+        "water_mean_kg_m3_6dp": "179.679200",
+        "recipe_count": 52,
+        "age_bands": {
+          "01_age_le_7": {
+            "row_count": 27,
+            "age_min_days": 3,
+            "age_max_days": 7,
+            "strength_sum_mpa": "556.61",
+            "strength_mean_mpa_6dp": "20.615185",
+            "strength_min_mpa": "7.84",
+            "strength_max_mpa": "54.9",
+            "cement_mean_kg_m3_6dp": "274.418519",
+            "water_mean_kg_m3_6dp": "176.637037"
+          },
+          "02_age_8_to_28": {
+            "row_count": 60,
+            "age_min_days": 14,
+            "age_max_days": 28,
+            "strength_sum_mpa": "2212.48",
+            "strength_mean_mpa_6dp": "36.874667",
+            "strength_min_mpa": "12.18",
+            "strength_max_mpa": "81.75",
+            "cement_mean_kg_m3_6dp": "252.920000",
+            "water_mean_kg_m3_6dp": "178.780000"
+          },
+          "03_age_29_to_90": {
+            "row_count": 18,
+            "age_min_days": 56,
+            "age_max_days": 90,
+            "strength_sum_mpa": "825.11",
+            "strength_mean_mpa_6dp": "45.839444",
+            "strength_min_mpa": "26.94",
+            "strength_max_mpa": "69.3",
+            "cement_mean_kg_m3_6dp": "247.472222",
+            "water_mean_kg_m3_6dp": "178.927778"
+          },
+          "04_age_gt_90": {
+            "row_count": 20,
+            "age_min_days": 91,
+            "age_max_days": 365,
+            "strength_sum_mpa": "966.61",
+            "strength_mean_mpa_6dp": "48.330500",
+            "strength_min_mpa": "27.63",
+            "strength_max_mpa": "70.7",
+            "cement_mean_kg_m3_6dp": "239.265000",
+            "water_mean_kg_m3_6dp": "187.160000"
+          }
+        }
+      }
+    }
+  }
+}

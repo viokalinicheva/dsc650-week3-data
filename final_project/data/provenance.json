@@ -1,0 +1,54 @@
+{
+  "dataset": "Concrete Compressive Strength",
+  "creator": "I-Cheng Yeh",
+  "citation": "Yeh, I. (1998). Concrete Compressive Strength [Dataset]. UCI Machine Learning Repository.",
+  "doi": "https://doi.org/10.24432/C5PK67",
+  "landing_url": "https://archive.ics.uci.edu/dataset/165/concrete-compressive-strength",
+  "source_csv_url": "https://archive.ics.uci.edu/static/public/165/data.csv",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_retrieval_date": "2026-11-13",
+  "prepared_at_utc": "2026-11-13T22:47:18+00:00",
+  "source_file": "data/raw/concrete_uci_original.csv",
+  "source_sha256": "8d4b15b6fc68cd932d745cbd663d5ceae66dd54422e99c1e4865f2936ab7e2af",
+  "source_bytes": 41472,
+  "pipeline_file": "data/concrete_strength.csv",
+  "pipeline_sha256": "5a128e9b3691404f10718d636a0d55db242e7d0dac572d538d127e2cd39459b9",
+  "pipeline_bytes": 40318,
+  "row_count": 1030,
+  "column_count": 9,
+  "column_order": [
+    "cement_kg_m3",
+    "slag_kg_m3",
+    "fly_ash_kg_m3",
+    "water_kg_m3",
+    "superplasticizer_kg_m3",
+    "coarse_aggregate_kg_m3",
+    "fine_aggregate_kg_m3",
+    "age_days",
+    "strength_mpa"
+  ],
+  "transformations": [
+    "Preserved source CSV unchanged under data/raw/.",
+    "Removed only the header row from the pipeline-ready CSV.",
+    "Normalized record terminators to LF in the pipeline-ready CSV.",
+    "Preserved all 1,030 data rows, original order, and all 9,270 string cell values.",
+    "Defined normalized column names in metadata; the pipeline-ready CSV is headerless.",
+    "Computed a recipe-group split oracle without changing, dropping, or appending dataset rows."
+  ],
+  "verification": {
+    "source_byte_identity": true,
+    "all_source_cells_preserved": true,
+    "source_cells_compared": 9270,
+    "canonical_lf_record_terminators": true,
+    "canonical_record_count": 1030,
+    "all_duplicate_rows_preserved": true
+  },
+  "limitations": [
+    "This historical laboratory benchmark does not justify safety certification, field deployment, or causal recipe optimization.",
+    "Ingredient-based grouping reduces repeated-recipe leakage but cannot establish independence of undocumented laboratory batches.",
+    "The small dataset demonstrates distributed-pipeline correctness, not a necessity for big-data-scale computation."
+  ],
+  "git_hub_publication": "Not performed by this preparation script; the final report must use a verified direct GitHub URL.",
+  "hdfs_ingestion": "Not performed by this preparation script; NiFi must ingest the pipeline-ready file first."
+}
