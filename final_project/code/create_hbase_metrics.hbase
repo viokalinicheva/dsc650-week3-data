@@ -1,0 +1,6 @@
+# I separate evaluation values from information that identifies the Spark run.
+create 'concrete_model_metrics_v1', {NAME => 'metrics', VERSIONS => 1}, {NAME => 'run', VERSIONS => 1}
+describe 'concrete_model_metrics_v1'
+# I capture this empty scan before I submit the machine learning job.
+scan 'concrete_model_metrics_v1'
+exit
