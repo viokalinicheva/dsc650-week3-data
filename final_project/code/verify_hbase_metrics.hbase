@@ -1,0 +1,4 @@
+# I scan the saved metrics and run details after Spark finishes.
+# The full JSON cell is also checked by the Python read-back in the ML job.
+scan 'concrete_model_metrics_v1', {COLUMNS => ['metrics:model_rmse_mpa', 'metrics:model_mae_mpa', 'metrics:model_r2', 'metrics:baseline_rmse_mpa', 'metrics:baseline_mae_mpa', 'metrics:baseline_r2', 'run:run_id', 'run:application_id', 'run:dataset_sha256', 'run:input_rows', 'run:split_counts'], LIMIT => 5}
+count 'concrete_model_metrics_v1'
